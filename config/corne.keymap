@@ -90,7 +90,7 @@
         compatible = "zmk,keymap";
 
         dvorakP {
-            display-name = "Base";
+            display-name = "dvorakP";
             bindings = <
 &kp CAPS                  &kp SEMICOLON    &kp COMMA        &kp PERIOD           &kp P              &kp Y        &kp F      &kp G               &kp C                 &kp R             &kp L             &kp SLASH
 &HML LEFT_CONTROL ESCAPE  &HML LEFT_WIN A  &HML LEFT_ALT O  &HML LEFT_CONTROL E  &HML LEFT_SHIFT U  &kp I        &kp D      &HMR RIGHT_SHIFT H  &HMR RIGHT_CONTROL T  &HMR RIGHT_ALT N  &HMR RIGHT_WIN S  &kp BACKSPACE
@@ -164,15 +164,6 @@
 &kp LCTRL  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans   &kp F12
 &kp LSHFT  &trans  &trans    &trans    &trans    &trans       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans   &trans
                              &kp LGUI  &trans    &kp SPACE    &kp RET         &trans          &kp RALT
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
