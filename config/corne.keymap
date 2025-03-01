@@ -56,6 +56,30 @@
             key-positions = <22 21>;
             layers = <1 2>;
         };
+
+        rsetL {
+            bindings = <&sys_reset>;
+            key-positions = <29 0>;
+            layers = <0 1>;
+        };
+
+        rsetR {
+            bindings = <&sys_reset>;
+            key-positions = <30 11>;
+            layers = <0 1>;
+        };
+
+        bootL {
+            bindings = <&bootloader>;
+            key-positions = <24 5>;
+            layers = <0 1>;
+        };
+
+        bootR {
+            bindings = <&bootloader>;
+            key-positions = <6 35>;
+            layers = <0 1>;
+        };
     };
 
     behaviors {
