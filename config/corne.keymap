@@ -40,7 +40,7 @@
         };
 
         altDel {
-            bindings = <&kp DELETE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <9 10>;
             layers = <1 0 2>;
         };
@@ -48,7 +48,7 @@
         caps {
             bindings = <&kp CAPS>;
             key-positions = <13 14>;
-            layers = <0 2 1>;
+            layers = <2 1>;
         };
 
         altEntr {
@@ -92,8 +92,8 @@
         dvorakP {
             display-name = "dvorakP";
             bindings = <
-&kp CAPS                  &kp SEMICOLON    &kp COMMA        &kp PERIOD           &kp P              &kp Y        &kp F      &kp G               &kp C                 &kp R             &kp L             &kp SLASH
-&HML LEFT_CONTROL ESCAPE  &HML LEFT_WIN A  &HML LEFT_ALT O  &HML LEFT_CONTROL E  &HML LEFT_SHIFT U  &kp I        &kp D      &HMR RIGHT_SHIFT H  &HMR RIGHT_CONTROL T  &HMR RIGHT_ALT N  &HMR RIGHT_WIN S  &kp BACKSPACE
+&kp CAPS                  &kp SEMICOLON    &kp COMMA        &kp PERIOD           &kp P              &kp Y        &kp F      &kp G               &kp C                 &kp R             &kp L             &kp BACKSPACE
+&HML LEFT_CONTROL ESCAPE  &HML LEFT_WIN A  &HML LEFT_ALT O  &HML LEFT_CONTROL E  &HML LEFT_SHIFT U  &kp I        &kp D      &HMR RIGHT_SHIFT H  &HMR RIGHT_CONTROL T  &HMR RIGHT_ALT N  &HMR RIGHT_WIN S  &kp SLASH
 &kp LEFT_SHIFT            &kp SQT          &kp Q            &kp J                &kp K              &kp X        &kp B      &kp M               &kp W                 &kp V             &kp Z             &kp RIGHT_ALT
                                                             &lt 5 LEFT_WIN       &lt 3 TAB          &kp ENTER    &kp SPACE  &lt 4 LEFT_ALT      &kp MINUS
             >;
