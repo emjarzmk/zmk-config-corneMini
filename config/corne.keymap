@@ -21,19 +21,19 @@
         qwerty {
             bindings = <&to 2>;
             key-positions = <36 38>;
-            layers = <1 7>;
+            layers = <1 0 8>;
         };
 
         Game {
             bindings = <&to 7>;
             key-positions = <39 41>;
-            layers = <2 1>;
+            layers = <2 1 0>;
         };
 
         dvorakP {
             bindings = <&to 1>;
             key-positions = <40 41>;
-            layers = <2 7>;
+            layers = <2 0 8>;
         };
 
         altEsc {
@@ -57,25 +57,31 @@
         rsetL {
             bindings = <&sys_reset>;
             key-positions = <29 0>;
-            layers = <1 2>;
+            layers = <1 2 0>;
         };
 
         rsetR {
             bindings = <&sys_reset>;
             key-positions = <30 11>;
-            layers = <1 2>;
+            layers = <1 2 0>;
         };
 
         bootL {
             bindings = <&bootloader>;
             key-positions = <24 5>;
-            layers = <1 2>;
+            layers = <1 2 0>;
         };
 
         bootR {
             bindings = <&bootloader>;
             key-positions = <6 35>;
-            layers = <1 2>;
+            layers = <1 2 0>;
+        };
+
+        colemak {
+            bindings = <&to 0>;
+            key-positions = <36 37>;
+            layers = <2 1 8>;
         };
     };
 
