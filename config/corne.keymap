@@ -11,23 +11,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-
-&mmv {
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <450>;
-    acceleration-exponent = <2.5>;
-};
-
-&msc {
-    x-input-code = <INPUT_REL_HWHEEL>;
-    y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <450>;
-    acceleration-exponent = <2.5>;
-};
-
-
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -131,17 +114,17 @@
         compatible = "zmk,keymap";
 
         Colemak-DHm {
-            display-name = "Colemak-dh";
+            display-name = "C-E";
             bindings = <
-&none      &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J      &kp L          &kp U         &kp Y        &kp SQT      &none
-&kp GRAVE  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M      &HMR RSHIFT N  &HMR RCTRL E  &HMR RALT I  &HMR RWIN O  &kp SEMI
-&none      &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K      &kp H          &kp COMMA     &kp DOT      &kp FSLH     &none
-                                     &lt 5 ESC     &lt 3 TAB      &lt 4 ENTER    &kp SPACE  &lt 6 BSPC     &lt 7 DEL
+&none  &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J      &kp L          &kp U         &kp Y        &kp SQT      &none
+&none  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M      &HMR RSHIFT N  &HMR RCTRL E  &HMR RALT I  &HMR RWIN O  &none
+&none  &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K      &kp H          &kp COMMA     &kp DOT      &kp FSLH     &none
+                                 &lt 5 ESC     &lt 3 TAB      &lt 4 ENTER    &kp SPACE  &lt 6 BSPC     &lt 7 DEL
             >;
         };
 
         DvorakP {
-            display-name = "Dvorakp";
+            display-name = "D";
             bindings = <
 &none                     &kp SEMICOLON    &kp COMMA        &kp PERIOD           &kp P              &kp Y          &kp F      &kp G               &kp C                 &kp R             &kp L             &kp FSLH
 &HML LEFT_CONTROL ESCAPE  &HML LEFT_WIN A  &HML LEFT_ALT O  &HML LEFT_CONTROL E  &HML LEFT_SHIFT U  &kp I          &kp D      &HMR RIGHT_SHIFT H  &HMR RIGHT_CONTROL T  &HMR RIGHT_ALT N  &HMR RIGHT_WIN S  &kp MINUS
@@ -209,10 +192,10 @@
         Fn {
             display-name = "fn";
             bindings = <
-&kp TAB    &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none   &none   &none   &none   &none   &trans
-                            &kp K_PWR  &kp K_APP  &kp K_EXEC         &trans  &trans  &trans
+&trans  &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none   &none   &none   &none   &none   &trans
+                         &kp K_PWR  &kp K_APP  &kp K_EXEC         &trans  &trans  &trans
             >;
         };
 
