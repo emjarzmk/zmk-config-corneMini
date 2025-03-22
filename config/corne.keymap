@@ -119,9 +119,9 @@
         Colemak-DHm {
             display-name = "C-E";
             bindings = <
-&none  &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J      &kp L          &kp U         &kp Y        &kp SQT      &none
-&none  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M      &HMR RSHIFT N  &HMR RCTRL E  &HMR RALT I  &HMR RWIN O  &none
-&none  &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K      &kp H          &kp COMMA     &kp DOT      &kp FSLH     &none
+&kp LALT      &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J      &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
+&kp LSHIFT  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M      &HMR RSHIFT N  &HMR RCTRL E  &HMR RALT I  &HMR RWIN O  &kp RSHIFT
+&kp LCTRL  &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K      &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
                                  &lt 5 ESC     &lt 3 TAB      &lt 4 ENTER    &kp SPACE  &lt 6 BSPC     &lt 7 DEL
             >;
         };
