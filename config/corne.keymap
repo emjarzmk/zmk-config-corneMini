@@ -119,10 +119,10 @@
         Colemak-DHm {
             display-name = "C-E";
             bindings = <
-&kp LALT      &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J      &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
+&kp LALT    &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J      &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
 &kp LSHIFT  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M      &HMR RSHIFT N  &HMR RCTRL E  &HMR RALT I  &HMR RWIN O  &kp RSHIFT
-&kp LCTRL  &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K      &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
-                                 &lt 5 ESC     &lt 3 TAB      &lt 4 ENTER    &kp SPACE  &lt 6 BSPC     &lt 7 DEL
+&kp LCTRL   &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K      &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
+                                      &lt 5 ESC     &lt 3 TAB      &lt 4 ENTER    &kp SPACE  &lt 6 BSPC     &lt 7 DEL
             >;
         };
 
@@ -149,10 +149,10 @@
         Nav {
             display-name = "nav";
             bindings = <
-&out OUT_TOG    &trans        &trans        &trans        &trans        &trans          &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &sys_reset
-&trans          &trans        &trans        &trans        &trans        &trans          &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &trans
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &bootloader
-                                            &trans        &trans        &trans          &trans      &trans       &trans
+&sys_reset         &trans  &trans  &trans  &trans  &trans    &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &sys_reset
+&ext_power EP_TOG  &trans  &trans  &trans  &trans  &trans    &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &ext_power EP_TOG
+&bootloader        &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &bootloader
+                                   &trans  &trans  &trans    &kp SPACE   &kp BSPC     &kp DEL
             >;
         };
 
@@ -169,10 +169,10 @@
         Media {
             display-name = "media";
             bindings = <
-&out OUT_TOG    &trans        &trans        &trans        &trans        &trans          &none       &none       &none         &none         &none          &none
-&none           &trans        &trans        &trans        &trans        &trans          &none       &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT     &none
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none       &kp K_BACK  &none         &none         &kp K_FORWARD  &none
-                                            &trans        &trans        &trans          &kp K_STOP  &kp K_PP    &kp K_MUTE
+&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans          &none       &none       &none         &none         &none          &none
+&out OUT_TOG    &trans        &trans        &trans        &trans        &trans          &none       &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT     &none
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none       &kp K_BACK  &none         &none         &kp K_FORWARD  &none
+                                            &trans        &trans        &kp ENTER       &kp K_STOP  &kp K_PP    &kp K_MUTE
             >;
         };
 
