@@ -122,7 +122,7 @@
 &kp LALT    &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J      &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
 &kp LSHIFT  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M      &HMR RSHIFT N  &HMR RCTRL E  &HMR RALT I  &HMR RWIN O  &kp RSHIFT
 &kp LCTRL   &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K      &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
-                                      &lt 5 ESC     &lt 3 TAB      &lt 4 ENTER    &kp SPACE  &lt 6 BSPC     &lt 7 DEL
+                                      &lt 5 ESC     &lt 3 TAB      &lt 4 SPACE    &kp ENTER  &lt 6 BSPC     &lt 7 DEL
             >;
         };
 
@@ -132,7 +132,7 @@
 &none                     &kp SEMICOLON    &kp COMMA        &kp PERIOD           &kp P              &kp Y          &kp F      &kp G               &kp C                 &kp R             &kp L             &kp FSLH
 &HML LEFT_CONTROL ESCAPE  &HML LEFT_WIN A  &HML LEFT_ALT O  &HML LEFT_CONTROL E  &HML LEFT_SHIFT U  &kp I          &kp D      &HMR RIGHT_SHIFT H  &HMR RIGHT_CONTROL T  &HMR RIGHT_ALT N  &HMR RIGHT_WIN S  &kp MINUS
 &kp LEFT_SHIFT            &kp SQT          &kp Q            &kp J                &kp K              &kp X          &kp B      &kp M               &kp W                 &kp V             &kp Z             &kp RIGHT_ALT
-                                                            &lt 5 ESC            &lt 3 TAB          &lt 4 ENTER    &kp SPACE  &lt 6 BSPC          &lt 7 DEL
+                                                            &lt 5 ESC            &lt 3 TAB          &lt 4 SPACE    &kp ENTER  &lt 6 BSPC          &lt 7 DEL
             >;
         };
 
