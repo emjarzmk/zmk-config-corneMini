@@ -275,10 +275,10 @@
         Blender {
             display-name = "B";
             bindings = <
-&mt LALT T   &kp F      &kp Q        &kp W         &kp E          &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&kp LCTRL    &kp LSHFT  &HML LALT A  &HML RCTRL S  &HML RSHIFT D  &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
-&mt LCTRL N  &kp Y      &kp Z        &kp X         &kp C          &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                                     &lt 9 TAB     &lt 8 B        &kp SPACE    &kp ENTER  &mo 16  &kp RALT
+&mt LALT T   &kp F      &kp Q  &kp W      &kp E    &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp LCTRL    &kp LSHFT  &kp A  &kp S      &kp D    &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
+&mt LCTRL N  &kp Y      &kp Z  &kp X      &kp C    &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
+                               &lt 9 TAB  &lt 8 B  &kp SPACE    &kp ENTER  &mo 16  &kp RALT
             >;
         };
 
