@@ -19,87 +19,87 @@
         compatible = "zmk,combos";
 
         Game {
-            bindings = <&to 7>;
+            bindings = <&to 10>;
             key-positions = <36 38>;
-            layers = <0 5 10 11 12>;
+            layers = <0 5 13 14 15>;
         };
 
         Qwerty {
-            bindings = <&to 10>;
+            bindings = <&to 13>;
             key-positions = <39 40>;
-            layers = <0 5 7 11 12>;
+            layers = <0 5 10 14 15>;
         };
 
         Blender {
             bindings = <&to 0>;
             key-positions = <41 39>;
-            layers = <10 0 7 5 11 12>;
+            layers = <13 0 10 5 14 15>;
         };
 
         altEsc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            layers = <10>;
+            layers = <13>;
         };
 
         altDel {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 10>;
-            layers = <10>;
+            layers = <13>;
         };
 
         altEntr {
             bindings = <&kp ENTER>;
             key-positions = <22 21>;
-            layers = <10>;
+            layers = <13>;
         };
 
         rsetL {
             bindings = <&sys_reset>;
             key-positions = <29 0>;
-            layers = <10 0>;
+            layers = <13 0>;
         };
 
         rsetR {
             bindings = <&sys_reset>;
             key-positions = <30 11>;
-            layers = <10 0>;
+            layers = <13 0>;
         };
 
         bootL {
             bindings = <&bootloader>;
             key-positions = <24 5>;
-            layers = <10 0>;
+            layers = <13 0>;
         };
 
         bootR {
             bindings = <&bootloader>;
             key-positions = <6 35>;
-            layers = <10 0>;
+            layers = <13 0>;
         };
 
         colemak {
             bindings = <&to 0>;
             key-positions = <41 40>;
-            layers = <10 7 5 11 12>;
+            layers = <13 10 5 14 15>;
         };
 
         Num {
             bindings = <&to 5>;
             key-positions = <38 37>;
-            layers = <10 7 0 12 11>;
+            layers = <13 10 0 15 14>;
         };
 
         Mouse {
-            bindings = <&to 12>;
+            bindings = <&to 15>;
             key-positions = <37 36>;
-            layers = <10 7 0 5 11>;
+            layers = <13 10 0 5 14>;
         };
 
         Nav {
-            bindings = <&to 11>;
+            bindings = <&to 14>;
             key-positions = <37 36>;
-            layers = <10 7 0 5 12>;
+            layers = <13 10 0 5 15>;
         };
     };
 
@@ -254,6 +254,36 @@
             >;
         };
 
+        Blender {
+            display-name = "B";
+            bindings = <
+&mt LALT T   &kp F      &kp Q       &kp W        &kp E         &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp LCTRL    &kp LSHFT  &mt LALT A  &mt RCTRL S  &mt RSHIFT D  &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
+&mt LCTRL N  &kp Y      &kp Z       &kp X        &kp C         &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
+                                    &lt 12 TAB   &lt 11 B      &kp SPACE    &kp ENTER  &mo 16  &kp RALT
+            >;
+        };
+
+        BlendNum {
+            display-name = "Bnum";
+            bindings = <
+&kp LALT    &kp N1  &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp P            &kp N6                    &kp N7       &kp N8      &kp N9     &kp N0      &kp BSPC
+&kp LSHIFT  &kp N2  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp L            &kp LS(LC(LG(LEFT_ALT)))  &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &kp DELETE
+&kp LCTRL   &kp N3  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp TILDE        &kp K_REDO                &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+                               &kp KP_DOT  &kp KP_N0  &kp KP_DIVIDE    &kp ENTER                 &trans       &kp RALT
+            >;
+        };
+
+        BlendFn {
+            display-name = "Bfn";
+            bindings = <
+&kp M       &kp LALT    &kp F1  &kp F2   &kp F3   &kp F4       &trans     &kp F5          &kp F6          &kp F7        &kp F8           &kp F10
+&kp LSHIFT  &kp LSHIFT  &kp F9  &kp F11  &kp F12  &kp I        &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&kp J       &kp LCTRL   &kp U   &kp J    &kp M    &kp K        &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                                &trans   &trans   &kp SPACE    &kp ENTER  &trans          &kp RALT
+            >;
+        };
+
         qwertyG {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -263,20 +293,20 @@
 
             display-name = "G";
             bindings = <
-&kp ESC   &kp TAB    &kp Q  &kp W       &kp E    &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&kp T     &kp LSHFT  &kp A  &kp S       &kp D    &kp F        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
-&kp CAPS  &kp LCTRL  &kp Z  &kp X       &kp C    &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                            &lt 9 LALT  &lt 8 G  &kp SPACE    &kp ENTER  &mo 13  &kp RALT
+&kp ESC   &kp TAB    &kp Q  &kp W        &kp E     &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp T     &kp LSHFT  &kp A  &kp S        &kp D     &kp F        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
+&kp CAPS  &kp LCTRL  &kp Z  &kp X        &kp C     &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
+                            &lt 12 LALT  &lt 11 G  &kp SPACE    &kp ENTER  &mo 16  &kp RALT
             >;
         };
 
         GNum {
             display-name = "Gnum";
             bindings = <
-&kp P       &kp N1  &kp N2  &trans  &kp N4  &kp N5       &kp N6                    &kp N7        &kp N8         &kp N9       &kp N0      &kp BSPC
-&kp LSHIFT  &kp N3  &trans  &trans  &trans  &kp N6       &kp LS(LC(LG(LEFT_ALT)))  &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT   &kp DELETE
-&kp LCTRL   &kp N7  &kp N8  &kp B   &kp N   &kp N9       &ext_power EP_TOG         &out OUT_TOG  &kp PAGE_DOWN  &kp PAGE_UP  &sys_reset  &bootloader
-                            &kp U   &trans  &kp SPACE    &kp ENTER                 &trans        &kp RALT
+&kp P       &kp N1  &kp N2  &trans  &kp N4  &kp N5       &kp N6                    &kp N7       &kp N8      &kp N9     &kp N0      &kp BSPC
+&kp LSHIFT  &kp N3  &trans  &trans  &trans  &kp N6       &kp LS(LC(LG(LEFT_ALT)))  &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &kp DELETE
+&kp LCTRL   &kp N7  &kp N8  &kp B   &kp N   &kp N9       &kp K_REDO                &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+                            &kp U   &trans  &kp SPACE    &kp ENTER                 &trans       &kp RALT
             >;
         };
 
