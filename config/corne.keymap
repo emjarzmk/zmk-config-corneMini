@@ -278,7 +278,7 @@
 &mt LALT T   &kp F      &kp Q       &kp W        &kp E         &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
 &kp LCTRL    &kp LSHFT  &mt LALT A  &mt RCTRL S  &mt RSHIFT D  &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
 &mt LCTRL N  &kp Y      &kp Z       &kp X        &kp C         &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                                    &lt 12 TAB   &lt 11 B      &kp SPACE    &kp ENTER  &mo 16  &kp RALT
+                                    &lt 9 TAB    &lt 8 B       &kp SPACE    &kp ENTER  &mo 16  &kp RALT
             >;
         };
 
