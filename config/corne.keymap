@@ -199,7 +199,7 @@
         Colemak-DHm {
             display-name = "C-E";
             bindings = <
-&kp LALT    &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J        &kp L          &kp U         &kp Y        &kp SQT      &kp LALT
+&kp LALT    &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J        &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
 &kp LSHIFT  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M        &HMR RSHIFT N  &HMR RCTRL E  &HMR LALT I  &HMR RWIN O  &kp RSHIFT
 &kp LCTRL   &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K        &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
                                       &lt 4 ESC     &lt 3 TAB      &lt 2 SPACE    &lt 1 ENTER  &lt 5 BSPC     &lt 6 DEL
