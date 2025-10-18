@@ -220,11 +220,11 @@
             label = "UACCO";
         };
 
-        UAccU: UAccO {
+        UAccU: UAccU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RS(SQT) &kp LS(U)>;
-            label = "UACCO";
+            label = "UACCU";
         };
 
         UAccN: UAccN {
