@@ -19,105 +19,105 @@
         compatible = "zmk,combos";
 
         Game {
-            bindings = <&to 9>;
+            bindings = <&to 11>;
             key-positions = <36 37>;
-            layers = <0 12 6 13 14 4>;
+            layers = <0 14 8 15 16 6>;
         };
 
         Qwerty {
-            bindings = <&to 12>;
+            bindings = <&to 14>;
             key-positions = <41 36>;
-            layers = <0 9 6 4 13 14>;
+            layers = <0 11 8 6 15 16>;
         };
 
         Blender {
-            bindings = <&to 6>;
+            bindings = <&to 8>;
             key-positions = <36 38>;
-            layers = <12 0 9 4 13 14 7 8>;
+            layers = <14 0 11 6 15 16 9 10>;
         };
 
         altEsc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            layers = <12 6 7 8>;
+            layers = <14 8 9 10>;
         };
 
         altDel {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 10>;
-            layers = <12>;
+            layers = <14>;
         };
 
         altEntr {
             bindings = <&kp ENTER>;
             key-positions = <22 21>;
-            layers = <12>;
+            layers = <14>;
         };
 
         rsetL {
             bindings = <&sys_reset>;
             key-positions = <29 0>;
-            layers = <12 0>;
+            layers = <14 0>;
         };
 
         rsetR {
             bindings = <&sys_reset>;
             key-positions = <30 11>;
-            layers = <12 0>;
+            layers = <14 0>;
         };
 
         bootL {
             bindings = <&bootloader>;
             key-positions = <24 5>;
-            layers = <12 0>;
+            layers = <14 0>;
         };
 
         bootR {
             bindings = <&bootloader>;
             key-positions = <6 35>;
-            layers = <12 0>;
+            layers = <14 0>;
         };
 
         colemak {
             bindings = <&to 0>;
             key-positions = <38 39>;
-            layers = <12 9 4 13 14 6 7 10>;
+            layers = <14 11 6 15 16 8 9 12>;
         };
 
         Num {
-            bindings = <&to 4>;
+            bindings = <&to 6>;
             key-positions = <12 0>;
-            layers = <12 9 0 14 13 6 7 8>;
+            layers = <14 11 0 16 15 8 9 10>;
         };
 
         Mouse {
-            bindings = <&to 14>;
+            bindings = <&to 16>;
             key-positions = <38 24>;
-            layers = <12 9 0 4 13 6 7 8>;
+            layers = <14 11 0 6 15 8 9 10>;
         };
 
         Nav {
-            bindings = <&to 13>;
+            bindings = <&to 15>;
             key-positions = <37 24>;
-            layers = <12 9 0 4 14 6 7 8>;
+            layers = <14 11 0 6 16 8 9 10>;
         };
 
         altSup {
             bindings = <&kp DEL>;
             key-positions = <25 26>;
-            layers = <6 7 8>;
+            layers = <8 9 10>;
         };
 
         BNum {
-            bindings = <&to 7>;
+            bindings = <&to 9>;
             key-positions = <37 25>;
-            layers = <4 13 14 6 8>;
+            layers = <6 15 16 8 10>;
         };
 
         BFn {
-            bindings = <&to 8>;
+            bindings = <&to 10>;
             key-positions = <37 26>;
-            layers = <4 13 14 6 7>;
+            layers = <6 15 16 8 9>;
         };
     };
 
@@ -149,16 +149,122 @@
         };
     };
 
+    macros {
+        AccA: AccA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp A>;
+            label = "ACCA";
+        };
+
+        AccE: AccE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp E>;
+            label = "ACCE";
+        };
+
+        AccI: AccI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp I>;
+            label = "ACCI";
+        };
+
+        AccO: AccO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp O>;
+            label = "ACCO";
+        };
+
+        AccU: AccU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp U>;
+            label = "ACCU";
+        };
+
+        AccN: AccN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(TILDE) &kp N>;
+            label = "ACCN";
+        };
+
+        UAccA: UAccA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp LS(A)>;
+            label = "UACCA";
+        };
+
+        UAccE: UAccE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp LS(E)>;
+            label = "UACCE";
+        };
+
+        UAccI: UAccI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp LS(I)>;
+            label = "UACCI";
+        };
+
+        UAccO: UAccO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp LS(O)>;
+            label = "UACCO";
+        };
+
+        UAccU: UAccO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SQT) &kp LS(U)>;
+            label = "UACCO";
+        };
+
+        UAccN: UAccN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(TILDE) &kp LS(N)>;
+            label = "UACCN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Colemak-DHm {
             display-name = "C-E";
             bindings = <
-&kp LALT    &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J               &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
-&kp LSHIFT  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M               &HMR RSHIFT N  &HMR RCTRL E  &HMR LALT I  &HMR RWIN O  &kp RSHIFT
-&kp LCTRL   &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K               &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
-                                      &lt 3 ESC     &lt 2 TAB      &lt 1 SPACE    &HMR RA(SQT) ENTER  &lt 4 BSPC     &lt 5 DEL
+&kp LALT    &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J        &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
+&kp LSHIFT  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M        &HMR RSHIFT N  &HMR RCTRL E  &HMR LALT I  &HMR RWIN O  &kp RSHIFT
+&kp LCTRL   &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K        &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
+                                      &lt 5 ESC     &lt 4 TAB      &lt 3 SPACE    &lt 1 ENTER  &lt 6 BSPC     &lt 7 DEL
+            >;
+        };
+
+        Accent {
+            display-name = "Acc";
+            bindings = <
+&kp LALT    &kp Q  &kp W        &kp F         &kp P      &kp B          &kp J   &kp L       &AccU      &kp Y    &kp SQT   &kp RALT
+&kp LSHIFT  &AccA  &HML LALT R  &HML LCTRL S  &lt 2 T    &kp G          &kp M   &AccN       &AccE      &AccI    &AccO     &kp RSHIFT
+&kp LCTRL   &kp Z  &kp X        &kp C         &kp D      &kp V          &kp K   &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                                &lt 5 ESC     &lt 4 TAB  &lt 3 SPACE    &trans  &lt 6 BSPC  &lt 7 DEL
+            >;
+        };
+
+        UpAccent {
+            display-name = "UAcc";
+            bindings = <
+&kp LALT    &kp Q   &kp W        &kp F         &kp P      &kp B          &kp J   &kp L       &UAccU     &kp Y    &kp SQT   &kp RALT
+&kp LSHIFT  &UAccA  &HML LALT R  &HML LCTRL S  &trans     &kp G          &kp M   &UAccN      &UAccE     &UAccI   &UAccO    &kp RSHIFT
+&kp LCTRL   &kp Z   &kp X        &kp C         &kp D      &kp V          &kp K   &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                                 &lt 5 ESC     &lt 4 TAB  &lt 3 SPACE    &trans  &lt 6 BSPC  &lt 7 DEL
             >;
         };
 
@@ -221,10 +327,10 @@
         Blender {
             display-name = "B";
             bindings = <
-&mt LALT T   &kp F      &kp Q  &kp W      &kp E    &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&kp LCTRL    &kp LSHFT  &kp A  &kp S      &kp D    &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
-&mt LCTRL N  &kp Y      &kp Z  &kp X      &kp C    &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                               &lt 8 TAB  &lt 7 B  &kp SPACE    &kp ENTER  &mo 15  &kp RALT
+&mt LALT T   &kp F      &kp Q  &kp W       &kp E    &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp LCTRL    &kp LSHFT  &kp A  &kp S       &kp D    &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
+&mt LCTRL N  &kp Y      &kp Z  &kp X       &kp C    &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
+                               &lt 10 TAB  &lt 9 B  &kp SPACE    &kp ENTER  &mo 17  &kp RALT
             >;
         };
 
@@ -244,7 +350,7 @@
 &kp M       &kp LALT    &kp F1  &kp F2   &kp F3   &kp F4    &trans     &kp F5          &kp F6          &kp F7        &kp F8           &kp F10
 &kp LSHIFT  &kp LSHIFT  &kp F9  &kp F11  &kp F12  &kp I     &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &kp J       &kp LCTRL   &kp U   &kp J    &kp M    &kp K     &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                                &trans   &trans   &to 6     &kp ENTER  &trans          &kp RALT
+                                &trans   &trans   &to 8     &kp ENTER  &trans          &kp RALT
             >;
         };
 
@@ -260,7 +366,7 @@
 &kp ESC   &kp TAB    &kp Q  &kp W        &kp E     &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
 &kp T     &kp LSHFT  &kp A  &kp S        &kp D     &kp F        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
 &kp CAPS  &kp LCTRL  &kp Z  &kp X        &kp C     &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                            &lt 11 LALT  &lt 10 G  &kp SPACE    &kp ENTER  &mo 15  &kp RALT
+                            &lt 13 LALT  &lt 12 G  &kp SPACE    &kp ENTER  &mo 17  &kp RALT
             >;
         };
 
@@ -290,7 +396,7 @@
 &kp ESC           &kp Q  &kp W  &kp E           &kp R      &kp T          &kp Y      &kp U      &kp I       &kp O    &kp P     &kp LEFT_BRACKET
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D           &kp F      &kp G          &kp H      &kp J      &kp K       &kp L    &kp SEMI  &kp BACKSPACE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C           &kp V      &kp B          &kp N      &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp APOS
-                                &lt 3 LEFT_WIN  &lt 2 TAB  &lt 1 ENTER    &kp SPACE  &lt 4 DEL  &lt 5 RALT
+                                &lt 5 LEFT_WIN  &lt 4 TAB  &lt 3 ENTER    &kp SPACE  &lt 6 DEL  &lt 7 RALT
             >;
         };
 
