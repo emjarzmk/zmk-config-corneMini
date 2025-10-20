@@ -153,84 +153,84 @@
         AccA: AccA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp A>;
+            bindings = <&kp RA(SQT) &kp A>;
             label = "ACCA";
         };
 
         AccE: AccE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp E>;
+            bindings = <&kp RA(SQT) &kp E>;
             label = "ACCE";
         };
 
         AccI: AccI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp I>;
+            bindings = <&kp RA(SQT) &kp I>;
             label = "ACCI";
         };
 
         AccO: AccO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp O>;
+            bindings = <&kp RA(SQT) &kp O>;
             label = "ACCO";
         };
 
         AccU: AccU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp U>;
+            bindings = <&kp RA(SQT) &kp U>;
             label = "ACCU";
         };
 
         AccN: AccN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(TILDE) &kp N>;
+            bindings = <&kp RA(TILDE) &kp N>;
             label = "ACCN";
         };
 
         UAccA: UAccA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp LS(A)>;
+            bindings = <&kp RA(SQT) &kp LS(A)>;
             label = "UACCA";
         };
 
         UAccE: UAccE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp LS(E)>;
+            bindings = <&kp RA(SQT) &kp LS(E)>;
             label = "UACCE";
         };
 
         UAccI: UAccI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp LS(I)>;
+            bindings = <&kp RA(SQT) &kp LS(I)>;
             label = "UACCI";
         };
 
         UAccO: UAccO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp LS(O)>;
+            bindings = <&kp RA(SQT) &kp LS(O)>;
             label = "UACCO";
         };
 
         UAccU: UAccU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SQT) &kp LS(U)>;
+            bindings = <&kp RA(SQT) &kp LS(U)>;
             label = "UACCU";
         };
 
         UAccN: UAccN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(TILDE) &kp LS(N)>;
+            bindings = <&kp RA(TILDE) &kp LS(N)>;
             label = "UACCN";
         };
     };
