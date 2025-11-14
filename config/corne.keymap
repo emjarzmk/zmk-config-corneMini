@@ -20,7 +20,7 @@
 
         Game {
             bindings = <&to 11>;
-            key-positions = <36 37>;
+            key-positions = <36 38 37 36 37 38>;
             layers = <0 14 8 15 16 6>;
         };
 
@@ -54,33 +54,9 @@
             layers = <14>;
         };
 
-        rsetL {
-            bindings = <&sys_reset>;
-            key-positions = <29 0>;
-            layers = <14 0>;
-        };
-
-        rsetR {
-            bindings = <&sys_reset>;
-            key-positions = <30 11>;
-            layers = <14 0>;
-        };
-
-        bootL {
-            bindings = <&bootloader>;
-            key-positions = <24 5>;
-            layers = <14 0>;
-        };
-
-        bootR {
-            bindings = <&bootloader>;
-            key-positions = <6 35>;
-            layers = <14 0>;
-        };
-
         colemak {
             bindings = <&to 0>;
-            key-positions = <38 39>;
+            key-positions = <36 37>;
             layers = <14 11 6 15 16 8 9 12>;
         };
 
