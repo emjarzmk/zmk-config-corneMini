@@ -20,7 +20,7 @@
 
         Game {
             bindings = <&to 11>;
-            key-positions = <36 38 37 36 37 38>;
+            key-positions = <40 41>;
             layers = <0 14 8 15 16 6>;
         };
 
