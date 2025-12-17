@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -123,6 +122,19 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 36 37 38>;
             flavor = "tap-preferred";
         };
+
+        LTM: LTM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTM";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <39 40 41 36 37 38>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -217,30 +229,30 @@
         Colemak-DHm {
             display-name = "C-E";
             bindings = <
-&kp LALT    &kp Q        &kp W        &kp F         &kp P          &kp B          &kp J        &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
-&kp LSHIFT  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G          &kp M        &HMR RSHIFT N  &HMR RCTRL E  &HMR LALT I  &HMR RWIN O  &kp RSHIFT
-&kp LCTRL   &kp Z        &kp X        &kp C         &kp D          &kp V          &kp K        &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
-                                      &lt 5 ESC     &lt 4 TAB      &lt 3 SPACE    &lt 1 ENTER  &lt 6 BSPC     &lt 7 DEL
+&kp LALT    &kp Q        &kp W        &kp F         &kp P          &kp B           &kp J       &kp L          &kp U         &kp Y        &kp SQT      &kp RALT
+&kp LSHIFT  &HML LWIN A  &HML LALT R  &HML LCTRL S  &HML LSHIFT T  &kp G           &kp M       &HMR RSHIFT N  &HMR RCTRL E  &HMR LALT I  &HMR RWIN O  &kp RSHIFT
+&kp LCTRL   &kp Z        &kp X        &kp C         &kp D          &kp V           &kp K       &kp H          &kp COMMA     &kp DOT      &kp FSLH     &kp RCTRL
+                                      &LTM 5 ESC    &LTM 4 TAB     &LTM 3 SPACE    &LTM 1 RET  &LTM 6 BSPC    &LTM 7 DEL
             >;
         };
 
         Accent {
             display-name = "Acc";
             bindings = <
-&kp LALT    &kp Q  &kp W        &kp F         &kp P      &kp B          &kp J   &kp L       &AccU      &kp Y    &kp SQT   &kp RALT
-&kp LSHIFT  &AccA  &HML LALT R  &HML LCTRL S  &lt 2 T    &kp G          &kp M   &AccN       &AccE      &AccI    &AccO     &kp RSHIFT
-&kp LCTRL   &kp Z  &kp X        &kp C         &kp D      &kp V          &kp K   &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                                &lt 5 ESC     &lt 4 TAB  &lt 3 SPACE    &trans  &lt 6 BSPC  &lt 7 DEL
+&kp LALT    &kp Q  &kp W        &kp F         &kp P       &kp B           &kp J   &kp L        &AccU       &kp Y    &kp SQT   &kp RALT
+&kp LSHIFT  &AccA  &HML LALT R  &HML LCTRL S  &lt 2 T     &kp G           &kp M   &AccN        &AccE       &AccI    &AccO     &kp RSHIFT
+&kp LCTRL   &kp Z  &kp X        &kp C         &kp D       &kp V           &kp K   &kp H        &kp COMMA   &kp DOT  &kp FSLH  &kp RCTRL
+                                &LTM 5 ESC    &LTM 4 TAB  &LTM 3 SPACE    &trans  &LTM 6 BSPC  &LTM 7 DEL
             >;
         };
 
         UpAccent {
             display-name = "UAcc";
             bindings = <
-&kp LALT    &kp Q   &kp W        &kp F         &kp P      &kp B          &kp J   &kp L       &UAccU     &kp Y    &kp SQT   &kp RALT
-&kp LSHIFT  &UAccA  &HML LALT R  &HML LCTRL S  &trans     &kp G          &kp M   &UAccN      &UAccE     &UAccI   &UAccO    &kp RSHIFT
-&kp LCTRL   &kp Z   &kp X        &kp C         &kp D      &kp V          &kp K   &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                                 &lt 5 ESC     &lt 4 TAB  &lt 3 SPACE    &trans  &lt 6 BSPC  &lt 7 DEL
+&kp LALT    &kp Q   &kp W        &kp F         &kp P       &kp B           &kp J   &kp L        &UAccU      &kp Y    &kp SQT   &kp RALT
+&kp LSHIFT  &UAccA  &HML LALT R  &HML LCTRL S  &trans      &kp G           &kp M   &UAccN       &UAccE      &UAccI   &UAccO    &kp RSHIFT
+&kp LCTRL   &kp Z   &kp X        &kp C         &kp D       &kp V           &kp K   &kp H        &kp COMMA   &kp DOT  &kp FSLH  &kp RCTRL
+                                 &LTM 5 ESC    &LTM 4 TAB  &LTM 3 SPACE    &trans  &LTM 6 BSPC  &LTM 7 DEL
             >;
         };
 
@@ -257,10 +269,10 @@
         NavR {
             display-name = "navR";
             bindings = <
-&sys_reset         &trans  &trans  &trans  &trans  &trans    &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &sys_reset
-&ext_power EP_TOG  &trans  &trans  &trans  &trans  &trans    &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &ext_power EP_TOG
-&bootloader        &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &bootloader
-                                   &trans  &trans  &trans    &kp SPACE   &kp BSPC     &kp DEL
+&sys_reset   &trans  &trans  &trans  &trans  &trans    &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &sys_reset
+&trans       &trans  &trans  &trans  &trans  &trans    &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &bootloader
+                             &trans  &trans  &trans    &kp SPACE   &kp BSPC     &kp DEL
             >;
         };
 
@@ -303,10 +315,10 @@
         Blender {
             display-name = "B";
             bindings = <
-&mt LALT T   &kp F      &kp Q  &kp W       &kp E    &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&kp LCTRL    &kp LSHFT  &kp A  &kp S       &kp D    &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
-&mt LCTRL N  &kp Y      &kp Z  &kp X       &kp C    &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                               &lt 10 TAB  &lt 9 B  &kp SPACE    &kp ENTER  &mo 17  &kp RALT
+&mt LALT T   &kp F      &kp Q  &kp W        &kp E     &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp LCTRL    &kp LSHFT  &kp A  &kp S        &kp D     &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
+&mt LCTRL N  &kp Y      &kp Z  &kp X        &kp C     &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
+                               &LTM 10 TAB  &LTM 9 B  &kp SPACE    &kp ENTER  &mo 17  &kp RALT
             >;
         };
 
@@ -339,10 +351,10 @@
 
             display-name = "G";
             bindings = <
-&kp ESC   &kp TAB    &kp Q  &kp W        &kp E     &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&kp T     &kp LSHFT  &kp A  &kp S        &kp D     &kp F        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
-&kp CAPS  &kp LCTRL  &kp Z  &kp X        &kp C     &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                            &lt 13 LALT  &lt 12 G  &kp SPACE    &kp ENTER  &mo 17  &kp RALT
+&kp ESC   &kp TAB    &kp Q  &kp W         &kp E      &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp T     &kp LSHFT  &kp A  &kp S         &kp D      &kp F        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp BACKSPACE
+&kp CAPS  &kp LCTRL  &kp Z  &kp X         &kp C      &kp V        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
+                            &LTM 13 LALT  &LTM 12 G  &kp SPACE    &kp ENTER  &mo 17  &kp RALT
             >;
         };
 
@@ -369,20 +381,20 @@
         qwerty {
             display-name = "Q";
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E           &kp R      &kp T          &kp Y      &kp U      &kp I       &kp O    &kp P     &kp LEFT_BRACKET
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D           &kp F      &kp G          &kp H      &kp J      &kp K       &kp L    &kp SEMI  &kp BACKSPACE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C           &kp V      &kp B          &kp N      &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp APOS
-                                &lt 5 LEFT_WIN  &lt 4 TAB  &lt 3 ENTER    &kp SPACE  &lt 6 DEL  &lt 7 RALT
+&kp ESC           &kp Q  &kp W  &kp E            &kp R       &kp T           &kp Y      &kp U       &kp I        &kp O    &kp P     &kp LEFT_BRACKET
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D            &kp F       &kp G           &kp H      &kp J       &kp K        &kp L    &kp SEMI  &kp BACKSPACE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C            &kp V       &kp B           &kp N      &kp M       &kp COMMA    &kp DOT  &kp FSLH  &kp APOS
+                                &LTM 5 LEFT_WIN  &LTM 4 TAB  &LTM 3 ENTER    &kp SPACE  &LTM 6 DEL  &LTM 7 RALT
             >;
         };
 
         Nav {
             display-name = "nav";
             bindings = <
-&sys_reset         &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &trans     &trans    &trans   &trans  &trans  &sys_reset
-&ext_power EP_TOG  &kp LEFT    &kp UP     &kp DOWN    &kp RIGHT    &kp CAPS      &trans     &trans    &trans   &trans  &trans  &ext_power EP_TOG
-&bootloader        &kp END     &kp PG_UP  &kp PG_DN   &kp HOME     &kp INS       &trans     &trans    &trans   &trans  &trans  &bootloader
-                                          &trans      &trans       &trans        &kp SPACE  &kp BSPC  &kp DEL
+&sys_reset   &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &trans     &trans    &trans   &trans  &trans  &sys_reset
+&trans       &kp LEFT    &kp UP     &kp DOWN    &kp RIGHT    &kp CAPS      &trans     &trans    &trans   &trans  &trans  &trans
+&bootloader  &kp END     &kp PG_UP  &kp PG_DN   &kp HOME     &kp INS       &trans     &trans    &trans   &trans  &trans  &bootloader
+                                    &trans      &trans       &trans        &kp SPACE  &kp BSPC  &kp DEL
             >;
         };
 
