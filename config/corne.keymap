@@ -96,9 +96,14 @@
             layers = <6 15 16 8 9>;
         };
 
-        SDScr {
+        STR {
             bindings = <&ext_power EP_TOG>;
             key-positions = <35 23 11>;
+        };
+
+        STL {
+            bindings = <&ext_power EP_TOG>;
+            key-positions = <24 0 12>;
         };
     };
 
